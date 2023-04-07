@@ -1,0 +1,237 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+}
+header>div{
+    margin: 25px 5vw;
+}
+.logo>img{
+    width: 50px;
+    height: 30px;
+}
+.navbar-menu-mobile{
+    display:grid;
+    place-items: center;
+}
+.navbar-menu-desktop{
+    display: none;
+}
+.article{
+    width: 90vw;
+    margin: 0 auto;
+}
+.article>img{
+    width: 90vw;
+}
+.article>div>h1{
+    font-size: 48px;
+    padding: 20px 0;
+}
+.article>div>summary{
+    color:#5C5B61;
+    letter-spacing: 0.4px;
+    margin-bottom: 30px;
+}
+.article>div>button{
+    background: #F84F51;
+    color:white;
+    letter-spacing: 4px;
+    border: 0;
+    width: 180px;
+    height: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.newArticles{
+    background: #00001A;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.articles-types{
+    color:#EEA352;
+    font-size: 24px;
+    margin: 0 20px;
+}
+.articles-feed{
+    color:aliceblue;
+    margin: 0 20px;
+}
+.articles{
+    padding: 30px 0;
+}
+.articles>summary{
+    color:hsl(236, 13%, 42%)
+}
+
+.articles:last-child{
+    padding-bottom: 0;
+}
+hr{
+    border-width: 0.1px;
+    border-color:hsl(236, 13%, 42%)
+}
+.hotArticles{
+    max-width: 90vw;
+    margin: 10vh 5vw;
+}
+.newsCard>img{
+    width: 26%;
+    height: 100%;
+}
+.newsCard{
+    display: flex;
+    margin: 40px 0;
+}
+.article-card{
+    padding-left: 20px;
+}
+.article-card>h1{
+    color:hsl(233, 8%, 79%);
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.article-card>h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.article-card>summary{
+    color:hsl(236, 13%, 42%);
+}
+
+
+.popup-nav-bar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 26, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.popup-nav-bar:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup-inside {
+    margin: 0px 0 0 28%;
+    padding: 20px;
+    background: #fff;
+    width: 70%;
+    height:100%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+.popup-inside .close {
+    transition: all 200ms;
+    width: 90%;
+    margin: 0 0 40px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .popup-inside .close:hover {
+    color: #F84F51;
+  }
+  .popup-inside .content {
+    max-height: 30%;
+    overflow: hidden;
+  }
+.content>div{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) {
+    
+    .navbar-menu-mobile{
+        display: none;
+    }
+    .navbar-menu-desktop{
+        display: flex;
+        justify-content: flex-end;
+        width: 700px;
+    }
+    .navbar-menu-desktop>li{
+        list-style: none;
+        margin: auto 0 0 40px;
+    }
+    .article{
+        grid-area: article;
+        height: 70svh;
+    }
+    .newArticles{
+        grid-area: newArticle;
+    }
+    .hotArticles{
+        grid-area: hotArticles;
+    }
+    .article>img{
+        width: 60vw;
+        height: 35svh;
+        object-fit: cover;
+    }
+    .newArticles{
+        width: 26.7vw;
+        height: 100%;
+    }
+    section{
+        margin: 0 5vw;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 75% 40%;
+        grid-template-areas: 
+        "article newArticle"
+        "hotArticles hotArticles"
+    }
+    .article>div>h1{
+        grid-area: aHeading;
+        font-size: 5.8vw;
+    }
+    .article>div>summary button{
+        grid-area: aDescription;
+    }
+    .article>div>button{
+        margin-top: 11vw;
+        width: 15vw;
+        height: 5svh;
+        font-size: 1vw;
+    }
+    .article>div>summary{
+        margin: auto;
+        font-size: 1.8vw;
+        padding: 40px 0;
+    }
+    .article>div{
+        display: grid;
+        grid-template-columns: 33% 33%;
+        grid-template-rows: 100px;
+        gap: 20px;
+        grid-template-areas: 
+        "aHeading aDescription"
+        "aHeading aDescription";
+
+    }
+    .newsCard{
+        margin: auto;
+        width:33.3%
+    }
+    .articles>h3{
+        font-size: 1.8vw;
+    }
+    .articles>summary{
+        font-size: 1.8vw;
+    }
+    .hotArticles{
+        display: flex;
+        margin: 0;
+        gap: 5vw
+    }
+}

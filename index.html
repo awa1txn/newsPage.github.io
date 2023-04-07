@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="assets/images/logo.svg" alt="">
+    </div>
+    <div class="navbar-menu-mobile">
+      <a href="#popup">
+        <img src="assets/images/icon-menu.svg" alt="">
+      </a>
+    </div>
+    <div class="navbar-menu-desktop">
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </div>
+  </header>
+  <section>
+    <div class="article">
+      <img src="assets/images/image-web-3-mobile.jpg" alt="">
+      <div>
+        <h1>The Bright Future of Web 3.0?</h1>
+        <summary>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</summary>
+        <button>Read more</button>
+      </div>
+    </div>
+    <div class="newArticles">
+      <div class="articles-types"><h1>New</h1></div>
+      <div class="articles-feed">
+        <div class="articles">
+          <h3>Hydrogen vs Electric Cars</h3>
+          <summary>Will hydrogen-fueled cars ever catch up to EVs?</summary>
+        </div>
+        <hr>
+        <div class="articles">
+          <h3>The Downsides of AI Artistry</h3>
+          <summary>What are the possible adverse effects of on-demand AI image generation?</summary>
+        </div>
+        <hr>
+        <div class="articles">
+          <h3>Is VC Funding Drying Up?</h3>
+          <summary>Private funding by VC firms is down 50% YOY. We take a look at what that means.</summary>
+        </div>
+      </div>
+    </div>
+    <div class="hotArticles">
+      <div class="newsCard">  
+        <img src="assets/images/image-retro-pcs.jpg" alt="">
+        <div class="article-card">
+          <h1>01</h1>
+          <h3>Reviving Retro PCs</h3>
+          <summary>What happens when old PCs are given modern upgrades?</summary>
+        </div>
+      </div>
+      <div class="newsCard">  
+        <img src="assets/images/image-top-laptops.jpg" alt="">
+        <div class="article-card">
+          <h1>02</h1>
+          <h3>Top 10 Laptops of 2022</h3>
+          <summary>Our best picks for various needs and budgets.</summary>
+        </div>
+      </div>
+      <div class="newsCard">  
+        <img src="assets/images/image-gaming-growth.jpg" alt="">
+        <div class="article-card">
+          <h1>03</h1>
+          <h3>The Growth of Gaming</h3>
+          <summary>How the pandemic has sparked fresh opportunities.</summary>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="popup-nav-bar" id="popup">
+    <div class="popup-inside">
+      <div class="close">
+      <a class="close" href="#"><img src="assets/images/icon-menu-close.svg" alt=""></a>
+      </div>
+      <div class="content">
+        <div>Home</div>
+        <div>New</div>
+        <div>Popular</div>
+        <div>Trending</div>
+        <div>Categories</div>
+      </div>
+    </div>
+  </aside>
+</body>
+</html>
